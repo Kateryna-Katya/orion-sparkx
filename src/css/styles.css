@@ -1174,3 +1174,108 @@ ul {
 @media (max-width: 600px) {
   .cookie-popup__content { flex-direction: column; text-align: center; }
 }
+/* Контейнер для юридического текста (уже для лучшей читаемости) */
+.container--narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pages {
+  padding: 160px 0 100px;
+  background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.03), transparent 400px);
+}
+
+.pages h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.pages h2 {
+  font-size: 24px;
+  margin: 50px 0 20px;
+  color: var(--white);
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+}
+
+.pages p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.pages ul {
+  margin-bottom: 30px;
+}
+
+.pages li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.pages li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+/* Декоративная карточка внутри текста */
+.legal-card {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.05);
+  margin: 40px 0;
+}
+
+.legal-card h2 {
+  margin-top: 0;
+  border: none;
+  padding: 0;
+}
+/* Дополнительные элементы для Disclaimer */
+.legal-notice {
+  padding: 30px;
+  background: rgba(0, 240, 255, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  margin-bottom: 40px;
+}
+
+.legal-notice p {
+  margin-bottom: 0;
+  color: var(--white);
+}
+
+.confirmation-box {
+  margin-top: 60px;
+  padding: 40px;
+  background: #151515;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.confirmation-box h2 {
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  justify-content: center;
+}
+
+.footer-note {
+  margin-top: 40px;
+  font-size: 14px !important;
+  text-align: right;
+  font-style: italic;
+}
