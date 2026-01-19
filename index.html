@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/orion-sparkx/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/orion-sparkx/assets/styles-C5joMoUD.css">
+    <link rel="stylesheet" crossorigin href="/orion-sparkx/assets/styles-BnG8OlUb.css">
   </head>
   <body>
     <header class="header">
@@ -38,6 +38,19 @@
       </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__backdrop"></div>
+  <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+          <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+          <li><a href="#courses" class="mobile-menu__link">Курсы</a></li>
+          <li><a href="#innovations" class="mobile-menu__link">Инновации</a></li>
+          <li><a href="#about" class="mobile-menu__link">О нас</a></li>
+          <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+          <li><a href="#contact" class="mobile-menu__link mobile-menu__link--btn">Начать</a></li>
+      </ul>
+  </div>
+</div>
 
     <main id="main-content">
       <!-- Loads the specified .html file -->
@@ -338,6 +351,67 @@
       </div>
   </div>
 </section>
+<section class="contact" id="contact">
+  <div class="container contact__container">
+      <div class="contact__info reveal">
+          <div class="section-tag">Связь с нами</div>
+          <h2 class="section-title">Готовы начать свой <span class="accent">путь в IT?</span></h2>
+          <p class="section-text">
+              Оставьте заявку на бесплатную консультацию. Наши эксперты помогут оценить перспективы вашего проекта и подобрать оптимальную программу обучения.
+          </p>
+
+          <div class="contact__badges">
+              <div class="contact__badge-item">
+                  <strong>98%</strong>
+                  <span>успешных кейсов</span>
+              </div>
+              <div class="contact__badge-item">
+                  <strong>24/7</strong>
+                  <span>экспертная поддержка</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="contact__form-wrapper reveal">
+          <form class="contact__form" id="main-form">
+              <div class="form-group">
+                  <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
+              </div>
+
+              <div class="form-group">
+                  <input type="email" name="email" class="form-input" placeholder="Email адрес" required>
+              </div>
+
+              <div class="form-group">
+                  <input type="tel" name="phone" id="phone-input" class="form-input"
+                         placeholder="Телефон (только цифры)"
+                         pattern="[0-9]*" inputmode="numeric" required>
+              </div>
+
+              <div class="form-captcha">
+                  <label class="captcha-label">Решите пример: <span id="captcha-question">...</span></label>
+                  <input type="number" id="captcha-answer" class="form-input" placeholder="Результат" required>
+              </div>
+
+              <div class="form-checkbox">
+                  <input type="checkbox" id="consent" required>
+                  <label for="consent">Я согласен с <a href="./personal-data-policy.html" class="accent">политикой конфиденциальности</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block" id="submit-btn">
+                  <span>Отправить запрос</span>
+              </button>
+
+              <div id="form-success" class="form-message form-message--success">
+                  Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.
+              </div>
+              <div id="form-error" class="form-message form-message--error">
+                  Ошибка. Пожалуйста, проверьте данные или попробуйте позже.
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
@@ -393,6 +467,14 @@
       </div>
   </div>
 </footer>
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей
+              <a href="cookies.html" class="accent">Cookie политике</a>.
+          </p>
+          <button class="btn btn--primary btn--small" id="cookie-accept">Принять</button>
+      </div>
+  </div>
   </body>
 </html>
